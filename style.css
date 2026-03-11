@@ -1132,7 +1132,7 @@ nav {
 .story-timeline {
     margin: 48px 0;
     position: relative;
-    padding-left: 20px;
+    padding-left: 45px;
 }
 
 .pro-methodology {
@@ -1143,7 +1143,7 @@ nav {
 .story-timeline::before {
     content: '';
     position: absolute;
-    left: 4px;
+    left: 15px;
     top: 0;
     height: 100%;
     width: 2px;
@@ -1163,7 +1163,7 @@ nav {
 .story-item {
     position: relative;
     padding-bottom: 60px;
-    padding-left: 40px;
+    padding-left: 0;
     opacity: 0;
     transform: translateX(-30px);
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1180,19 +1180,31 @@ nav {
 
 .story-year {
     position: absolute;
-    left: -70px;
-    top: 5px;
+    left: -42px;
+    top: 35px;
     font-weight: 900;
     color: var(--text-secondary);
-    font-size: 1.2rem;
-    width: 50px;
-    text-align: right;
+    font-size: 0.8rem;
+    width: 30px;
+    text-align: center;
     font-family: var(--font-heading);
+    transform: rotate(-90deg);
+}
+
+@media (min-width: 640px) {
+    .story-year {
+        left: -105px;
+        top: 5px;
+        font-size: 1.1rem;
+        width: 80px;
+        text-align: right;
+        transform: none;
+    }
 }
 
 .story-dot {
     position: absolute;
-    left: -2px;
+    left: -37px;
     top: 10px;
     width: 16px;
     height: 16px;
@@ -1228,7 +1240,8 @@ nav {
 
 @media (min-width: 640px) {
     .story-timeline {
-        padding-left: 80px;
+        padding-left: 120px;
+        margin: 64px auto;
     }
 }
 

@@ -70,8 +70,18 @@ function initNeuralNetwork() {
 
         function init() {
             const rect = canvas.parentElement.getBoundingClientRect();
-            canvas.width = rect.width;
-            canvas.height = rect.height;
+            // Fallback for cases where parent might not have height initially
+            canvas.width = rect.width || window.innerWidth;
+            canvas.height = rect.height || 500; 
+            
+            // Ensure canvas has correct style for layering
+            canvas.style.position = 'absolute';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            canvas.style.zIndex = '0';
+            
             particles = [];
             for (let i = 0; i < particleCount; i++) {
                 particles.push(new Particle());
@@ -168,7 +178,7 @@ function initRevealAnimations() {
     style.textContent = `
         .revealed {
             opacity: 1 !important;
-            transform: translateY(0) !important;
+            transform: translate(0, 0) !important;
         }
     `;
     document.head.appendChild(style);
