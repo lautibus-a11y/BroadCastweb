@@ -69,23 +69,29 @@ function initNeuralNetwork() {
         }
 
         function init() {
-            const rect = canvas.parentElement.getBoundingClientRect();
-            // Fallback for cases where parent might not have height initially
-            canvas.width = rect.width || window.innerWidth;
-            canvas.height = rect.height || 500; 
+            const parent = canvas.parentElement;
+            const width = parent.offsetWidth || window.innerWidth;
+            const height = parent.offsetHeight || 500;
             
-            // Ensure canvas has correct style for layering
+            canvas.width = width;
+            canvas.height = height;
+            
+            // Critical: Ensure parent has relative/absolute positioning
+            if (getComputedStyle(parent).position === 'static') {
+                parent.style.position = 'relative';
+            }
+            
             canvas.style.position = 'absolute';
             canvas.style.top = '0';
             canvas.style.left = '0';
-            canvas.style.width = '100%';
-            canvas.style.height = '100%';
-            canvas.style.zIndex = '0';
+            canvas.style.pointerEvents = 'none';
+            canvas.style.zIndex = '1'; // Behind content (z-index 2)
             
             particles = [];
             for (let i = 0; i < particleCount; i++) {
                 particles.push(new Particle());
             }
+            console.log(`Neural network initialized on ${canvas.className} (${width}x${height})`);
         }
 
         function animate() {
@@ -173,15 +179,26 @@ function initRevealAnimations() {
         observer.observe(el);
     });
 
-    // Custom CSS for revealed state (could also be in style.css)
+    // Custom CSS for revealed state
     const style = document.createElement('style');
     style.textContent = `
         .revealed {
             opacity: 1 !important;
             transform: translate(0, 0) !important;
+            visibility: visible !important;
         }
     `;
     document.head.appendChild(style);
+
+    // Fallback: If elements aren't revealed in 3 seconds, show them anyway
+    setTimeout(() => {
+        revealElements.forEach(el => {
+            if (!el.classList.contains('revealed')) {
+                el.classList.add('revealed');
+                console.warn('Animation fallback triggered for', el);
+            }
+        });
+    }, 2000);
 }
 
 /**
