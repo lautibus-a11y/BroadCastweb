@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrodCastWeb | Ingeniería Digital de Élite</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="BrodCastWeb - Ingeniería digital de élite desde Argentina. Ecosistemas web, productos mobile y agentes de IA de alto rendimiento.">
+    <meta name="keywords"
+        content="desarrollo web, argentina, inteligencia artificial, software engineering, mobile apps">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav id="navbar">
+        <a href="#" class="logo">BrodCast<span>Web</span></a>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#como">Proceso</a></li>
+            <li><a href="#quienes">Nosotros</a></li>
+        </ul>
+        <div class="nav-extra">
+            <a href="#contacto" class="btn btn-primary btn-nav">Contacto</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="inicio">
+            <canvas class="neural-canvas"></canvas>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Innovación en<br>
+                            <div class="rotating-container">
+                                <span class="rotating-text" id="rotating-text">
+                                    <b>Ecosistemas Web</b>
+                                    <b>Productos Mobile</b>
+                                    <b>Agentes de IA</b>
+                                </span>
+                            </div>
+                        </h1>
+                        <p class="hero-description">Desarrollamos infraestructura digital de alto vuelo para marcas que
+                            buscan liderar el mercado global desde Argentina al mundo.</p>
+                        <div class="hero-btns">
+                            <a href="#proyectos" class="btn btn-primary">Ver Portfolio</a>
+                            <a href="#contacto" class="btn btn-secondary">Consulta Directa</a>
+                        </div>
+                    </div>
+                    <div class="hero-visuals">
+                        <div class="planet-container">
+                            <div class="planet">
+                                <div class="planet-glow"></div>
+                                <div class="planet-crater"></div>
+                                <div class="planet-crater"></div>
+                                <div class="planet-crater"></div>
+                            </div>
+                            <div class="rocket">
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent)"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                                    <path
+                                        d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2s-7 7-9.38 10a11.03 11.03 0 0 1-5.67 4z" />
+                                    <path d="M12 9s3-3 3-5M9 12s-3 3-5 3" />
+                                </svg>
+                                <div class="rocket-fire"></div>
+                            </div>
+                            <div class="orbit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+
+        <section class="services" id="servicios">
+            <div class="container">
+                <div class="section-tag-wrapper">
+                    <div class="section-tag"><span class="dot"></span>Capacidades</div>
+                </div>
+                <h2 class="section-title">Soluciones de Ingeniería</h2>
+                <div class="services-grid">
+                    <div class="s-card">
+                        <div class="s-icon-container">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3>Arquitectura de Software</h3>
+                        <p>Estructuras robustas y escalables diseñadas para un crecimiento sin techo.</p>
+                    </div>
+                    <div class="s-card">
+                        <div class="s-icon-container">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3>Ecosistemas Digitales</h3>
+                        <p>Desarrollo integral de plataformas web enfocadas 100% en el usuario final.</p>
+                    </div>
+                    <div class="s-card">
+                        <div class="s-icon-container">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <h3>Implementación de IA</h3>
+                        <p>Automatización avanzada con redes neuronales y modelos de lenguaje de vanguardia.</p>
+                    </div>
+                    <div class="s-card">
+                        <div class="s-icon-container">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <h3>Estrategia SEO</h3>
+                        <p>Optimización técnica para que tu marca mande en los resultados de búsqueda.</p>
+                    </div>
+                    <div class="s-card">
+                        <div class="s-icon-container">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                <line x1="12" y1="18" x2="12.01" y2="18" />
+                            </svg>
+                        </div>
+                        <h3>Diseño Web Responsive</h3>
+                        <p>Interfaces que se adaptan a cualquier dispositivo, garantizando una experiencia de usuario
+                            impecable.</p>
+                    </div>
+                    <div class="s-card">
+                        <div class="s-icon-container">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h3>Sistemas de Gestión</h3>
+                        <p>Soluciones personalizadas para optimizar tus procesos internos y potenciar la productividad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="proyectos">
+            <div class="container">
+                <div class="section-tag-wrapper">
+                    <div class="section-tag dark-tag"><span class="dot grey-dot"></span>Showcase</div>
+                </div>
+                <h2 class="section-title">Casos de Éxito</h2>
+                <p class="section-intro">Proyectos que redefinieron industrias a través de soluciones de ingeniería
+                    personalizadas y diseño de vanguardia.</p>
+                <div class="p-grid">
+                    <div class="p-item">
+                        <div class="p-img-mock"
+                            style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000')">
+                        </div>
+                        <span class="p-category">FINTECH</span>
+                        <div class="p-info">
+                            <h3>Nexus Cloud</h3>
+                            <p>Infraestructura bancaria moderna y segura para el mercado global.</p>
+                            <div class="p-view-btn">Ver Proyecto <svg width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="p-item">
+                        <div class="p-img-mock"
+                            style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1000')">
+                        </div>
+                        <span class="p-category">E-COMMERCE</span>
+                        <div class="p-info">
+                            <h3>Lumina Wear</h3>
+                            <p>Plataforma de comercio electrónico con escalabilidad de alta gama.</p>
+                            <div class="p-view-btn">Ver Proyecto <svg width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="p-item">
+                        <div class="p-img-mock"
+                            style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000')">
+                        </div>
+                        <span class="p-category">AI REAL ESTATE</span>
+                        <div class="p-info">
+                            <h3>Agora Prop</h3>
+                            <p>PropTech inteligente con algoritmos de búsqueda predictiva.</p>
+                            <div class="p-view-btn">Ver Proyecto <svg width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-we-do" id="como">
+            <canvas class="neural-canvas sparse"></canvas>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="section-tag-wrapper">
+                    <div class="section-tag"><span class="dot"></span>Metodología</div>
+                </div>
+                <h2 class="section-title">Cómo Laburamos</h2>
+                <div class="story-timeline pro-methodology">
+                    <div class="story-item active">
+                        <span class="story-year">01</span>
+                        <div class="story-dot"></div>
+                        <div class="story-info">
+                            <h5>Estrategia de Élite</h5>
+                            <p>Definimos objetivos de negocio de alto impacto y el roadmap tecnológico más potente para
+                                tu nicho.</p>
+                        </div>
+                    </div>
+                    <div class="story-item active">
+                        <span class="story-year">02</span>
+                        <div class="story-dot"></div>
+                        <div class="story-info">
+                            <h5>Ingeniería de Alto Vuelo</h5>
+                            <p>Construcción modular y escalable usando stacks de última generación. Código limpio,
+                                rápido y seguro.</p>
+                        </div>
+                    </div>
+                    <div class="story-item active">
+                        <span class="story-year">03</span>
+                        <div class="story-dot"></div>
+                        <div class="story-info">
+                            <h5>Crecimiento Exponencial</h5>
+                            <p>Deploy controlado, optimización constante de performance y monitoreo de métricas reales
+                                para dominación total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="quienes">
+            <canvas class="neural-canvas sparse"></canvas>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="section-tag-wrapper align-left">
+                            <div class="section-tag"><span class="dot"></span>Nuestra Esencia</div>
+                        </div>
+                        <h2 class="section-title text-left">Ingeniería de Élite para Visionarios</h2>
+                        <p class="about-lead">En BrodCastWeb, no solo picamos código; diseñamos la infraestructura del
+                            mañana. Somos un equipo de ingenieros obsesionados con la performance, la escalabilidad y la
+                            creación de productos que marquen una diferencia real en el mercado global.</p>
+
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Velocidad Real</h4>
+                                    <p>Optimizamos cada línea de código para un rendimiento extremo.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Seguridad por Diseño</h4>
+                                    <p>Protegemos tus activos digitales con estándares bancarios.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                        </path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>IA Nativa</h4>
+                                    <p>Integramos inteligencia artificial en el core de tu producto.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <h4>+150</h4>
+                                <p>Proyectos Finalizados</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4>99%</h4>
+                                <p>SLA de Estabilidad</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4>+10</h4>
+                                <p>Países Alcanzados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visuals">
+                        <div class="social-box">
+                            <h3>Conecta con la Élite</h3>
+                            <p>Seguí de cerca nuestra cultura y los procesos detrás de cada gran lanzamiento.</p>
+                            <div class="social-links">
+                                <a href="#" class="btn btn-secondary">Instagram</a>
+                                <a href="#" class="btn btn-secondary">LinkedIn</a>
+                                <a href="#" class="btn btn-secondary">Twitter / X</a>
+                            </div>
+                        </div>
+                        <div class="about-image-card">
+                            <div class="image-overlay"></div>
+                            <div class="image-content">
+                                <span>BASADO EN ARGENTINA</span>
+                                <h4>Talento Global sin Fronteras</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="contacto">
+            <div class="container">
+                <div class="cta-wrap">
+                    <h2>¿Arrancamos tu proyecto?</h2>
+                    <p>Hablemos sobre cómo escalar tus operaciones digitales hoy mismo.</p>
+                    <a href="https://wa.me/tu-numero" class="btn btn-whatsapp">WhatsApp Ejecutivo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                &copy; 2025 BrodCastWeb. Ingeniería Digital de Élite desde Argentina.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
